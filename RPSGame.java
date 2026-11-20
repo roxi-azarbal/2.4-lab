@@ -39,7 +39,7 @@ public class RPSGame {
         boolean valid = false;
 
         while (!valid) {
-            System.out.println("Rock, Paper, or Scissors?");
+            System.out.println("Rock, paper, or scissors?");
             String typed = input.nextLine();
             valid = player.choose(typed);
         }

@@ -1,5 +1,9 @@
 public class RPSRules {
     public static boolean isValidChoice(String choice) {
+        if (choice == null) {
+            return false;
+        }
+
         return (choice.equals("rock") || choice.equals("paper") || choice.equals("scissors"));
     }
 
