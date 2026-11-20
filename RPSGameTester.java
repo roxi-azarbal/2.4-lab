@@ -51,8 +51,10 @@ public class RPSGameTester {
 
                 // TEST 08
                 RPSGame game = new RPSGame(jordan, computer);
-                System.out.println("getPlayer (expect true): " + (game.getPlayer() == jordan));
-                System.out.println("getComputer (expect true): " + (game.getComputer() == computer));
+                System.out.println("getPlayer (expect true): "
+                                + (game.getPlayer() == jordan));
+                System.out.println("getComputer (expect true): "
+                                + (game.getComputer() == computer));
 
                 // TEST 09
                 jordan.choose("rock");
@@ -68,7 +70,8 @@ public class RPSGameTester {
                 // TEST 10
                 Scanner roundsInput = new Scanner("3/n");
 
-                System.out.println("readRounds() (expect 3): " + RPSGame.readRounds(roundsInput)); // update
+                System.out.println("readRounds() (expect 3): "
+                                + RPSGame.readRounds(roundsInput)); // update
 
                 // TEST 11
                 Scanner choiceInput = new Scanner("lizard\n\nSCISSORS\nrock\n");
